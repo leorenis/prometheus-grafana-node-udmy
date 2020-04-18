@@ -1,6 +1,5 @@
 const express = require('express')
 const client = require('prom-client')
-
 const app = express()
 
 // Counter
@@ -37,7 +36,7 @@ app.get('/', (req, res) => {
     histogram.observe(responseTime)
     summary.observe(responseTime)
     
-    res.send('Hello world, my friends')
+    res.send('Hello world, app for instrumentation prometheus app.')
 })
 
 app.get('/metrics', (req, res) => {
