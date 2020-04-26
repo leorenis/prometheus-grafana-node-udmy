@@ -13,7 +13,7 @@ const counter = new client.Counter({
 // Gauhe -> Calibre
 const gauge = new client.Gauge({
     name: 'class_free_bytes',
-    help: 'ramdom number to simulate the free bytes.',
+    help: 'ramdom number to simulate the free bytes. Its just an exemple.',
 });
 
 // Histogram
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
     histogram.observe(responseTime)
     summary.observe(responseTime)
     
-    res.send('Hello world, app for instrumentation prometheus app.')
+    res.send('App exemple, app for instrumentation prometheus app.')
 })
 
 app.get('/metrics', (req, res) => {
