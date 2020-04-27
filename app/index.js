@@ -5,7 +5,7 @@ const app = express()
 // Counter
 const counter = new client.Counter({
   name: 'class_request_counter',
-  help: 'Request counter by Leo R Santos.',
+  help: 'Request counter by Leo R R Santos.',
   labelNames: ['statusCode']
 })
 // counter.inc(10) // Inc with 10
@@ -25,7 +25,7 @@ const histogram = new client.Histogram({
 
 const summary = new client.Summary({
     name: 'class_request_time_seconds_summary',
-    help: 'Summary help',
+    help: 'Summary help. Its just an exemple.',
     percentiles: [0.5, 0.9, 0.99],
 })
 
